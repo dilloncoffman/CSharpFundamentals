@@ -37,6 +37,7 @@ namespace GradeBook
             }
             
             var stats = book.GetStatistics();
+            Console.WriteLine($"consts are static members on a class: {Book.CATEGORY}");
             Console.WriteLine($"For the book named {book.Name}");
             Console.WriteLine($"The lowest grade is {stats.Low}");
             Console.WriteLine($"The average grade is {stats.Average}");

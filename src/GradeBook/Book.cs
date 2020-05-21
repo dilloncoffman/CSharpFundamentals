@@ -15,6 +15,8 @@ namespace GradeBook
 
     readonly string category = "Science";
 
+    public const string CATEGORY = "Math";
+
     public Book(string name)
     {
       category = "";
