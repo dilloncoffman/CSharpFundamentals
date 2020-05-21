@@ -17,13 +17,25 @@ namespace GradeBook
     }
   }
 
-  public abstract class Book: NamedObject // classes that derive from this class, should have different implementations of AddGrade
+  public interface IBook // C# convention to begin interface names with "I"
+  {
+    void AddGrade(double grade);
+    Statistics GetStatistics();
+    string Name { get; } // interface guarantees Name will AT LEAST have a getter
+  }
+
+  public abstract class Book: NamedObject, IBook // classes that derive from this class, should have different implementations of AddGrade
   {
     protected Book(string name) : base(name)
     {  
     }
 
     public abstract void AddGrade(double grade);
+
+    public virtual Statistics GetStatistics()
+    {
+      throw new NotImplementedException();
+    }
   }
 
   public class InMemoryBook : Book // Named InMemoryBook because it's AddGrade method will store the grades in memory, whereas another class that extends BookBase may choose to store the grades in a file or over a network
@@ -67,7 +79,7 @@ namespace GradeBook
         throw new ArgumentException($"Invalaid {nameof(grade)}");
     }
 
-    public Statistics GetStatistics()
+    public override Statistics GetStatistics()
     {
       var result = new Statistics();
       result.Average = 0.0;
