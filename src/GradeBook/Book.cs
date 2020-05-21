@@ -17,15 +17,19 @@ namespace GradeBook
     }
   }
 
-  public class Book : NamedObject
+  public abstract class Book: NamedObject // classes that derive from this class, should have different implementations of AddGrade
   {
-    private List<double> grades;
+    protected Book(string name) : base(name)
+    {  
+    }
 
-    // const vs readonly keywords
-    readonly string category = "Science";
-    public const string CATEGORY = "Math";
+    public abstract void AddGrade(double grade);
+  }
 
-    public Book(string name) : base(name)
+  public class InMemoryBook : Book // Named InMemoryBook because it's AddGrade method will store the grades in memory, whereas another class that extends BookBase may choose to store the grades in a file or over a network
+  {
+
+    public InMemoryBook(string name) : base(name)
     {
       category = ""; // readonly vars can be changed/reinitialized in constructor
       this.Name = name;
@@ -54,7 +58,7 @@ namespace GradeBook
         }
     }
 
-    public void AddGrade(double grade)
+    public override void AddGrade(double grade)
     {
 
       if (grade <= 100 && grade >= 0)
@@ -99,5 +103,11 @@ namespace GradeBook
 
       return result;
     }
+
+    private List<double> grades;
+
+    // const vs readonly keywords
+    readonly string category = "Science";
+    public const string CATEGORY = "Math";
   }
 }
