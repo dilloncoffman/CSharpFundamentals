@@ -6,7 +6,23 @@ namespace GradeBook
   public class Book
   {
     private List<double> grades;
-    public string Name;
+
+    public string Name
+    {
+      get
+      {
+        return name;
+      }
+      set
+      {
+        // implicit variable value available in setter, the value someone is trying to SET your var to
+        if(String.IsNullOrEmpty(value))
+        {
+          name = value;
+        }
+      }
+    }
+    private string name;
 
     public Book(string name)
     {
@@ -14,7 +30,7 @@ namespace GradeBook
       this.grades = new List<double>();
     }
 
-    public void AddLetterGrade(char letter)
+    public void AddGrade(char letter)
     {
         switch(letter)
         {
