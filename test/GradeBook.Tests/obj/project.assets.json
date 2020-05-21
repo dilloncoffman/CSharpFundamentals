@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectUniqueName": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "projectName": "GradeBook.Tests",
-      "projectPath": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectPath": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "packagesPath": "C:\\Users\\dcoffman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\test\\GradeBook.Tests\\obj\\",
+      "outputPath": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\test\\GradeBook.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -3550,8 +3550,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj": {
-              "projectPath": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj"
+            "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj": {
+              "projectPath": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj"
             }
           }
         }

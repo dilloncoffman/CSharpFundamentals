@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj": {}
+    "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj": {
+    "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectUniqueName": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectPath": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\dcoffman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\obj\\",
+        "outputPath": "c:\\Users\\dcoffman\\Desktop\\pluralsight\\c#-gradebook\\src\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

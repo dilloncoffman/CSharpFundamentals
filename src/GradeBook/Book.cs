@@ -5,6 +5,11 @@ namespace GradeBook
 {
   public class NamedObject // Ideally would be in its own file, but for learning purposes it's okay to have inside Book.cs
   {
+    public NamedObject(string name)
+    {
+      Name = name;
+    }
+
     public string Name // Book will inherit this property
     {
       get;
@@ -20,7 +25,7 @@ namespace GradeBook
     readonly string category = "Science";
     public const string CATEGORY = "Math";
 
-    public Book(string name)
+    public Book(string name) : base(name)
     {
       category = ""; // readonly vars can be changed/reinitialized in constructor
       this.Name = name;
@@ -34,7 +39,7 @@ namespace GradeBook
           case 'A':
             AddGrade(90);
             break;
-          case 'B': 
+          case 'B':
             AddGrade(80);
             break;
           case 'C':
@@ -49,7 +54,7 @@ namespace GradeBook
         }
     }
 
-    public void AddGrade(double grade) 
+    public void AddGrade(double grade)
     {
 
       if (grade <= 100 && grade >= 0)
