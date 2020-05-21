@@ -3,23 +3,26 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-  public class Book
+  public class NamedObject // Ideally would be in its own file, but for learning purposes it's okay to have inside Book.cs
+  {
+    public string Name // Book will inherit this property
+    {
+      get;
+      set;
+    }
+  }
+
+  public class Book : NamedObject
   {
     private List<double> grades;
 
-    public string Name
-    {
-      get; 
-      private set;
-    }
-
+    // const vs readonly keywords
     readonly string category = "Science";
-
     public const string CATEGORY = "Math";
 
     public Book(string name)
     {
-      category = "";
+      category = ""; // readonly vars can be changed/reinitialized in constructor
       this.Name = name;
       this.grades = new List<double>();
     }
