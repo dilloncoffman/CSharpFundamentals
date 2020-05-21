@@ -9,18 +9,7 @@ namespace GradeBook
 
     public string Name
     {
-      get
-      {
-        return name;
-      }
-      set
-      {
-        // implicit variable value available in setter, the value someone is trying to SET your var to
-        if(String.IsNullOrEmpty(value))
-        {
-          name = value;
-        }
-      }
+      get; set;
     }
     private string name;
 
