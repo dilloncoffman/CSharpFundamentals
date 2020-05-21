@@ -9,9 +9,9 @@ namespace GradeBook
 
     public string Name
     {
-      get; set;
+      get; 
+      private set;
     }
-    private string name;
 
     public Book(string name)
     {
