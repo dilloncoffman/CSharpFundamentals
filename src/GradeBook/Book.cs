@@ -13,8 +13,11 @@ namespace GradeBook
       private set;
     }
 
+    readonly string category = "Science";
+
     public Book(string name)
     {
+      category = "";
       this.Name = name;
       this.grades = new List<double>();
     }
